@@ -1,0 +1,65 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.header
+	.nav
+		.main-cont
+			.nav-wrap
+				.logo
+					img(src="img/logo.png", alt="")
+				.menu
+					.menu-wrap
+						a(href="#").menu__el Преимущества
+						a(href="#").menu__el Заработок
+						a(href="#").menu__el Требования
+						a(href="#").menu__el Контакты
+				a(href="#").nav__phone 8(495)123-12-12
+				.nav__toggle
+					+icon("menu","icon")
+	.header-content
+		img(src="img/uber-logo.png", alt="")
+		.header-content-text uber-prof
+		.header-content-text-sub Официальный партнер UBER
+		+icon("arrow-down","icon")
+
+.section.section-adv
+	.section-adv-img
+		img(src="img/car-white.png", alt="")
+	.section-title.section-title--white Узнайте наши преимущества
+	.section-title-sub.section-title-sub--white C нами очень выгодно работать, мы всегда следим за рынком
+	
+	.main-cont
+		.adv-cont
+			.adv-el
+				.adv-icon
+					+icon("coins","icon")
+				.adv-text Выплаты раз в неделю 4%
+
+			.adv-el
+				.adv-icon
+					+icon("icon-change","icon")
+				.adv-text Ежедневные выплаты 5%
+
+			.adv-el
+				.adv-icon
+					+icon("icon-user","icon")
+				.adv-text Договор с каждым водителем
+
+			.adv-el
+				.adv-icon
+					+icon("icon-case","icon")
+				.adv-text Переход от других партнеров
+
+			.adv-el
+				.adv-icon
+					+icon("icon-handshake","icon")
+				.adv-text Все встречи в нашем офисе
+
+			.adv-el
+				.adv-icon
+					+icon("icon-doc","icon")
+				.adv-text Гарантия всех выплат
+
+
+
+include ./block_html/_script.jade
