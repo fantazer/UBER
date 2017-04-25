@@ -28,7 +28,6 @@ $link-color-hover = black
 //webfont('RUB', 'rouble-webfont', 'normal')
 //Add fotn rub write .rub a - (a,b,c,d - change type font)
 
-webfont('PT Sans', 'PT Sans', 'normal')
 $v-font =  PT Sans
 
 $weigh-light = 300
@@ -75,13 +74,12 @@ btnStyleLight(br-btn,color-btn)
 		
 .btn
 	up()
-	br(4px)
 	tr(all)
 	display inline-block
 	margin-bottom 20px
 	border 1px solid black
-	padding 5px 10px
-	background none
+	padding 20px 80px
+	background white
 	&:hover
 		cursor pointer
 		
@@ -125,11 +123,9 @@ input,textarea,select
 	border 1px solid grey
 	resize: none
 	outline: 0 !important
-	border-radius 4px
 	font-family $v-font
 	display block!important
 	margin-bottom 10px
-	focus(green)
-	
-placeholder(black)
+	focus(grey)
+	placeholder(black)
 

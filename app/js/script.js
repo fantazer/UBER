@@ -1,5 +1,13 @@
-$(document).ready(function(){
+/* ###### init skrol to point  ######*/
+/* ###### bower i page-scroll-to-id  ######*/
 
+
+$(document).ready(function(){
+      $("a[rel='m_PageScroll2id']").mPageScroll2id({
+		    offset:50,
+		    highlightClass:"activ-nav"
+		});
+ 
 	/* ###### For only ies  ######*/
 	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
 	//	//code
@@ -16,8 +24,7 @@ $(document).ready(function(){
 		$('body').prepend('<div class="old-browser"><div class="old-browser-text"> Браузер не поддерживается =(</div></div>');
 	}
 
-	//for init SVG 
-	svg4everybody();
+	 
 	
 	/* ###### For SlideToggle Elements  ######*/
 	var hideToggle = function(targetClick,toggleEl) {
@@ -25,36 +32,75 @@ $(document).ready(function(){
 				event.stopPropagation();
 				$(toggleEl).slideToggle("fast");
 		});
-		$(toggleEl).on("click", function (event) {
-			event.stopPropagation();
-		});
 		$(document).on("click", function () {
 				$(toggleEl).hide();
 		});
 	}
-	hideToggle('.nav__toggle','.menu');
 
+ if ($(window).width() < 768) {
+				hideToggle('.nav__toggle','.menu');
+}
+	
 
-	/* ###### init RangeSLider  ######*/
-	/* ###### bower i --save-dev nouislider  ######*/
-	/* ###### https://gist.github.com/fantazer/2bdc4e6a63708e143718ffa7c32eae17  ######*/
+$('.validate-form').each(function() {   
+		var curentForm = $(this);
+    $(this).validate({        
+		    	rules:{ //правила для полей 
+						name:{
+							required:true,
+						},
+						phone:{
+							required:true,
+							minlength:5,
+							number:true
+						},
+						comment:{
+							required:true,
+							minlength:5,
+						},
+					},
+					messages:{
+						name:{
+							required: 'Обязательное поле',
+						},
+						phone:{
+							required: 'Обязательное поле',
+							number:'Введите правильный номер',
+							minlength:'Номер должен быть длиннее',
+						},
+						comment:{
+							required: 'Обязательное поле',
+							minlength:'Сообщение должно быть длиннее',
+						},
+					},
+					submitHandler : function(form){ 
+						$.ajax({ //отправка ajax
+						            type: "POST",
+						            url: "sender.php",
+						            data: $(form).serialize(),
+						            timeout: 3000,
+						          });
+							$('.modal-close').click(); // автозакрытие окна
+							setTimeout(function(){
+										$('.modal-true').bPopup({
+											closeClass:'modal-close',
+												position:['auto','auto'], // position center
+												follow: [true,true],
+												autoClose: 2000
+										}); 
+										$(':input','.validate-form') 
+										  .not(':button, :submit, :reset, :hidden')
+										  .val('')
+										  .removeAttr('checked')
+										  .removeAttr('selected')
+							},1000)
+							
+				}
+		    });
+		});
 
-	/*var slider = document.getElementById('rangeSlider'); //Элемент
-
-	noUiSlider.create(slider, {
-		start: [0, 100],
-		connect: true,
-		step: 10,
-		range: {
-			'min': 0,
-			'max': 100,
-		},
-		pips: { // Show a scale with the slider
-			mode: 'steps',
-			density: 4
-		}
-	});*/
-
+	//for init SVG
+	svg4everybody();
 	
 })
 

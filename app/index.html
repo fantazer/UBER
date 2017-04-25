@@ -5,13 +5,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="format-detection" content="telephone=no" />
+		<meta meta="meta" name="theme-color" content="#303030" />
 		<title>Document</title>
 		<!--build:css css/vendor.css-->
 		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
-		<!--link(rel="stylesheet", href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css")-->
-		<!--link(rel="stylesheet", href="bower/components-font-awesome/css/font-awesome.css")-->
-		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css" />
+		<link type="image/x-icon" rel="icon" href="img/favicon.ico" />
 		<!--endbuild-->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-edit.css" />
@@ -21,22 +20,22 @@
 	<!-- - for item in args-->
 
 	<body>
-		<div class="header">
+		<div id="header" class="header">
 			<div class="nav">
 				<div class="main-cont">
 					<div class="nav-wrap">
-						<div class="logo">
+						<a href="#" rel="m_PageScroll2id" class="logo">
 							<img src="img/logo.png" alt="" />
-						</div>
+						</a>
 						<div class="menu">
 							<div class="menu-wrap">
-								<a href="#" class="menu__el">Преимущества</a>
-								<a href="#" class="menu__el">Заработок</a>
-								<a href="#" class="menu__el">Требования</a>
-								<a href="#" class="menu__el">Контакты</a>
+								<a href="#adv" rel="m_PageScroll2id" class="menu__el">Преимущества</a>
+								<a href="#work" rel="m_PageScroll2id" class="menu__el">Заработок</a>
+								<a href="#valid" rel="m_PageScroll2id" class="menu__el">Требования</a>
+								<a href="#cont" rel="m_PageScroll2id" class="menu__el">Контакты</a>
 							</div>
 						</div>
-						<a href="#" class="nav__phone">8(495)123-12-12</a>
+						<a href="tel:8(499)394-67-10" class="nav__phone">8(499)394-67-10</a>
 						<div class="nav__toggle">
 							<svg class="icon">
 								<use xlink:href="#menu"></use>
@@ -49,13 +48,16 @@
 				<img src="img/uber-logo.png" alt="" />
 				<div class="header-content-text">uber-prof</div>
 				<div class="header-content-text-sub">Официальный партнер UBER</div>
-				<svg class="icon">
-					<use xlink:href="#arrow-down"></use>
-				</svg>
+				<a href="#adv" rel="m_PageScroll2id">
+					<svg class="icon">
+						<use xlink:href="#arrow-down"></use>
+					</svg>
+				</a>
 			</div>
 		</div>
+		<!--section-adv-->
 		<div class="section section-adv">
-			<div class="section-adv-img">
+			<div id="adv" class="section-adv-img">
 				<img src="img/car-white.png" alt="" />
 			</div>
 			<div class="section-title section-title--white">Узнайте наши преимущества</div>
@@ -113,11 +115,185 @@
 				</div>
 			</div>
 		</div>
+		<!--section-adv-end-->
+		<!--section work-->
+		<div id="work" class="section section-work">
+			<div class="section-title">Как начать зарабатывать с нами</div>
+			<div class="section-title-sub">Это сделать очень легко, мы всегда открыты для новых водителей</div>
+			<div class="main-cont">
+				<div class="work-cont">
+					<div class="work-img">
+						<img src="img/car-yellow.jpg" alt="" />
+					</div>
+					<div class="work-list">
+						<div class="work-list-el">
+							<div class="work-list-numb">01</div>
+							<div class="work-list-text">Позвоните по телефону 8(499)394-67-10 или оставьте заявку на сайте.</div>
+						</div>
+						<div class="work-list-el">
+							<div class="work-list-numb">02</div>
+							<div class="work-list-text">После консультации отправьте необходимые документы на электронную почту uberprof77@gmail.com или пройдите процедуру оформления у нас в офисе</div>
+						</div>
+						<div class="work-list-el">
+							<div class="work-list-numb">03</div>
+							<div class="work-list-text">Пройдите инструктаж и получите персональный доступ к приложению для получения заказов.</div>
+						</div>
+						<div class="work-list-el">
+							<div class="work-list-numb">04</div>
+							<div class="work-list-text">ВСЕ! Можете принимать заказы и зарабатывать, получая отчеты о выполненных поездках.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--section work-end-->
+		<!--section work-->
+		<div class="section section-uber">
+			<div class="main-cont">
+				<div class="uber">
+					<div class="uber-img">
+						<img src="img/uber-logo.png" alt="" />
+					</div>
+					<div class="uber-title">uber-prof</div>
+					<div class="uber-title-sub">Наша компания помогает водителям подключиться к сервису Uber в Моске с минимальной комиссией и максимальной гарантией выплат вовремя!</div>
+					<a href="#cont" rel="m_PageScroll2id" class="uber-title-get">отправить заявку</a>
+				</div>
+			</div>
+		</div>
+		<!--section work-end-->
+		<!--section valid-->
+		<div id="valid" class="section section-valid">
+			<div class="section-title">Требования к водителю</div>
+			<div class="section-title-sub">Мы ценим каждого водителя, но у нас существует строгий отбор</div>
+			<div class="main-cont">
+				<div class="valid-img">
+					<img src="img/car-front.jpg" alt="" />
+				</div>
+				<div class="valid-cont">
+					<div class="valid-el">
+						<div class="valid-title">
+							<div class="valid-numb">01.</div>
+							<span>Паспорт</span>
+						</div>
+						<div class="valid-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!</div>
+					</div>
+					<div class="valid-el">
+						<div class="valid-title">
+							<div class="valid-numb">02.</div>
+							<span>Автомобиль</span>
+						</div>
+						<div class="valid-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!</div>
+					</div>
+					<div class="valid-el">
+						<div class="valid-title">
+							<div class="valid-numb">03.</div>
+							<span>Стаж вождения</span>
+						</div>
+						<div class="valid-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!</div>
+					</div>
+					<div class="valid-el">
+						<div class="valid-title">
+							<div class="valid-numb">04.</div>
+							<span>Отсутствие судимостей</span>
+						</div>
+						<div class="valid-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!</div>
+					</div>
+					<div class="valid-el">
+						<div class="valid-title">
+							<div class="valid-numb">05.</div>
+							<span>Смартфон или планшет</span>
+						</div>
+						<div class="valid-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!</div>
+					</div>
+					<div class="valid-el">
+						<div class="valid-title">
+							<div class="valid-numb">06.</div>
+							<span>Карта любого банка РФ. </span>
+						</div>
+						<div class="valid-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--section valid-end-->
+		<!--section pay-->
+		<div class="section section-pay">
+			<div class="main-cont section-pay-wrap">
+				<div class="pay">
+					<div class="pay-title">Зарабатывайте сегодня</div>
+					<div class="pay-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut odit soluta voluptatibus aliquid ipsum consequuntur eum, recusandae sint veniam. Quae aut odit soluta voluptatibus aliquid ipsum consequuntur eum, recusandae sint veniam.</div>
+					<a
+					  href="#cont" rel="m_PageScroll2id" class="uber-get">отправить заявку</a>
+				</div>
+			</div>
+		</div>
+		<!--section pay-end-->
+		<!--section cont-->
+		<div class="section section-cont">
+			<div class="section-title">Остались вопросы ?</div>
+			<div class="section-title-sub">Если у вас есть вопросы или предложения мы с радостью ответим на них</div>
+			<div id="cont" class="cont-wrap">
+				<div class="main-cont">
+					<div class="cont">
+						<div class="form">
+							<div class="form-title">Оставьте вашу заявку</div>
+							<div class="form-title-sub">Мы свяжемся с вами через пару минут</div>
+							<form action="javascript:void(null);" class="validate-form">
+								<input type="text" placeholder="Ваше имя" name="name" />
+								<input type="text" placeholder="Ваш телефон" name="phone" />
+								<textarea name="comment" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+								<input type="submit" value="отправить" class="form-get" />
+							</form>
+						</div>
+						<div class="cont-info">
+							<div class="cont-info-title">Наши контакты</div>
+							<div class="cont-info-el">
+								<div class="cont-info-icon">
+									<svg class="icon">
+										<use xlink:href="#icon-phone"></use>
+									</svg>
+								</div>
+								<div class="cont-info-text">8(499)394-67-10</div>
+							</div>
+							<div class="cont-info-el">
+								<div class="cont-info-icon">
+									<svg class="icon">
+										<use xlink:href="#mail"></use>
+									</svg>
+								</div>
+								<div class="cont-info-text">uberprof77@gmail.com </div>
+							</div>
+							<div class="cont-info-el">
+								<div class="cont-info-icon">
+									<svg class="icon">
+										<use xlink:href="#icon-placeholder"></use>
+									</svg>
+								</div>
+								<div class="cont-info-text">Варшавское шоссе 125, секция 12</div>
+							</div>
+							<div class="cont-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ipsum libero aperiam facilis in est aliquam mollitia perferendis pariatur corporis dolorum hic quisquam eveniet quasi molestias labore soluta dolorem, vero aut porro accusantium incidunt
+								asperiores. Molestias nisi, fuga voluptas!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal-true">
+			<div class="modal-wrap">
+				<svg class="icon">
+					<use xlink:href="#interface"></use>
+				</svg>
+				<div class="modal-true-text">Ваша заявка принята</div>
+			</div>
+		</div>
+		<!--section cont-end-->
 		<!--build:js js/combined.js-->
 		<script src="bower/jquery/dist/jquery.js"></script>
-		<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script src="bower/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
 		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
 		<script src="js/jquery.smoothscroll.js"></script>
+		<script src="bower/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="bower/bPopup/jquery.bpopup.min.js"></script>
 		<!-- endbuild-->
 		<script src="js/script.js"></script>
 		<script src="js/script-edit.js"></script>

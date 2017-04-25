@@ -1,65 +1,185 @@
 include block_html/_style.jade
 include ../module/**/*.jade
 
-.header
+#header.header
 	.nav
 		.main-cont
 			.nav-wrap
-				.logo
+				a(href="#" rel='m_PageScroll2id').logo
 					img(src="img/logo.png", alt="")
 				.menu
 					.menu-wrap
-						a(href="#").menu__el Преимущества
-						a(href="#").menu__el Заработок
-						a(href="#").menu__el Требования
-						a(href="#").menu__el Контакты
-				a(href="#").nav__phone 8(495)123-12-12
+						a(href="#adv" rel='m_PageScroll2id').menu__el Преимущества
+						a(href="#work" rel='m_PageScroll2id').menu__el Заработок
+						a(href="#valid" rel='m_PageScroll2id').menu__el Требования
+						a(href="#cont" rel='m_PageScroll2id').menu__el Контакты
+				a(href="tel:8(499)394-67-10").nav__phone 8(499)394-67-10
 				.nav__toggle
 					+icon("menu","icon")
 	.header-content
 		img(src="img/uber-logo.png", alt="")
 		.header-content-text uber-prof
 		.header-content-text-sub Официальный партнер UBER
-		+icon("arrow-down","icon")
+		a(href="#adv" rel='m_PageScroll2id')
+			+icon("arrow-down","icon")
 
+//section-adv
 .section.section-adv
-	.section-adv-img
+	#adv.section-adv-img
 		img(src="img/car-white.png", alt="")
 	.section-title.section-title--white Узнайте наши преимущества
 	.section-title-sub.section-title-sub--white C нами очень выгодно работать, мы всегда следим за рынком
-	
 	.main-cont
 		.adv-cont
 			.adv-el
 				.adv-icon
 					+icon("coins","icon")
 				.adv-text Выплаты раз в неделю 4%
-
 			.adv-el
 				.adv-icon
 					+icon("icon-change","icon")
 				.adv-text Ежедневные выплаты 5%
-
 			.adv-el
 				.adv-icon
 					+icon("icon-user","icon")
 				.adv-text Договор с каждым водителем
-
 			.adv-el
 				.adv-icon
 					+icon("icon-case","icon")
 				.adv-text Переход от других партнеров
-
 			.adv-el
 				.adv-icon
 					+icon("icon-handshake","icon")
 				.adv-text Все встречи в нашем офисе
-
 			.adv-el
 				.adv-icon
 					+icon("icon-doc","icon")
 				.adv-text Гарантия всех выплат
+//section-adv-end
 
+//section work
+#work.section.section-work
+	.section-title Как начать зарабатывать с нами
+	.section-title-sub Это сделать очень легко, мы всегда открыты для новых водителей
+	.main-cont
+		.work-cont
+			.work-img
+				img(src="img/car-yellow.jpg", alt="")
+			.work-list
+				.work-list-el
+					.work-list-numb 01
+					.work-list-text Позвоните по телефону 8(499)394-67-10 или оставьте заявку на сайте.
+				.work-list-el
+					.work-list-numb 02
+					.work-list-text После консультации отправьте необходимые документы на электронную почту uberprof77@gmail.com или пройдите процедуру оформления у нас в офисе
+				.work-list-el
+					.work-list-numb 03
+					.work-list-text Пройдите инструктаж и получите персональный доступ к приложению для получения заказов.
+				.work-list-el
+					.work-list-numb 04
+					.work-list-text ВСЕ! Можете принимать заказы и зарабатывать, получая отчеты о выполненных поездках.
+//section work-end
 
+//section work
+.section.section-uber
+	.main-cont
+		.uber
+			.uber-img
+				img(src="img/uber-logo.png", alt="")
+			.uber-title uber-prof
+			.uber-title-sub Наша компания помогает водителям подключиться к сервису Uber в Моске с минимальной комиссией и максимальной гарантией выплат вовремя!
+			a(href="#cont" rel='m_PageScroll2id').uber-title-get отправить заявку
+//section work-end
 
+//section valid
+#valid.section.section-valid
+	.section-title Требования к водителю
+	.section-title-sub Мы ценим каждого водителя, но у нас существует строгий отбор
+	.main-cont
+		.valid-img
+			img(src="img/car-front.jpg", alt="")
+		.valid-cont
+			.valid-el
+				.valid-title
+					.valid-numb 01.
+					span Паспорт
+				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+
+			.valid-el
+				.valid-title
+					.valid-numb 02.
+					span Автомобиль
+				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+
+			.valid-el
+				.valid-title
+					.valid-numb 03.
+					span Стаж вождения
+				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+
+			.valid-el
+				.valid-title
+					.valid-numb 04.
+					span Отсутствие судимостей
+				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+			
+			.valid-el
+				.valid-title
+					.valid-numb 05.
+					span Смартфон или планшет
+				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+
+			.valid-el
+				.valid-title
+					.valid-numb 06.
+					span Карта любого банка РФ. 
+				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+//section valid-end
+
+//section pay
+.section.section-pay
+	.main-cont.section-pay-wrap
+		.pay
+			.pay-title Зарабатывайте сегодня
+			.pay-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut odit soluta voluptatibus aliquid ipsum consequuntur eum, recusandae sint veniam. Quae aut odit soluta voluptatibus aliquid ipsum consequuntur eum, recusandae sint veniam.
+			a(href="#cont" rel='m_PageScroll2id').uber-get отправить заявку
+//section pay-end
+
+//section cont
+.section.section-cont
+	.section-title Остались вопросы ?
+	.section-title-sub Если у вас есть вопросы или предложения мы с радостью ответим на них
+	#cont.cont-wrap
+		.main-cont
+			.cont
+				.form
+					.form-title Оставьте вашу заявку
+					.form-title-sub Мы свяжемся с вами через пару минут
+					form.validate-form( action="javascript:void(null);")
+						input(type="text" placeholder="Ваше имя" name="name")
+						input(type="text" placeholder="Ваш телефон" name="phone")
+						textarea(name="comment", cols="30", rows="10"  placeholder="Ваше сообщение")
+						input(type="submit" value="отправить").form-get 
+				.cont-info
+					.cont-info-title Наши контакты
+					.cont-info-el
+						.cont-info-icon
+							+icon("icon-phone","icon")
+						.cont-info-text 8(499)394-67-10
+					.cont-info-el
+						.cont-info-icon
+							+icon("mail","icon")
+						.cont-info-text uberprof77@gmail.com 
+					.cont-info-el
+						.cont-info-icon
+							+icon("icon-placeholder","icon")
+						.cont-info-text Варшавское шоссе 125, секция 12
+					.cont-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ipsum libero aperiam facilis in est aliquam mollitia perferendis pariatur corporis dolorum hic quisquam eveniet quasi molestias labore soluta dolorem, vero aut porro accusantium incidunt asperiores. Molestias nisi, fuga voluptas!
+
+.modal.modal-true
+	.modal-wrap
+		+icon("interface","icon")
+		.modal-true-text Ваша заявка принята
+
+//section cont-end
 include ./block_html/_script.jade

@@ -15,6 +15,8 @@
 		width 35%
 .menu
 	width 50%
+	+above(768px)
+		display block !important
 	+below(768px)
 		width auto
 		display none
@@ -69,9 +71,9 @@
 		fill grey
 		margin-top 20px
 	img
-		width 30%
-		min-width 150px
+		width 200px
 		margin-bottom 10px
+		display block
 .header-content-text
 	+below(768px)
 		font-size 40px
@@ -96,12 +98,14 @@
 		width 600px
 		margin 0 auto
 .section-adv
+	+below(768px)
+		margin-top 30px
 	background #303030 
 	position relative
 	margin-top 150px
 	.section-title
 		+below(768px)
-			margin-top 60px
+			margin-top 90px
 		margin-top 150px
 .section-title
 	+below(768px)
@@ -133,7 +137,7 @@
 	margin-top 90px
 .adv-el
 	+below(768px)
-		width 100%
+		width 45%
 		margin-bottom 20px
 	flex(mid)
 	fl()
@@ -141,10 +145,252 @@
 	width 30%
 	margin-bottom 90px
 .adv-icon
+	margin-bottom 20px
 	.icon
+		+below(768px)
+			size 50px
 		fill white
 		size 90px
 
 .adv-text
+	+below(768px)
+		font-size 14px
 	text-align center
 	color darken(white,30)
+	font-size 20px
+//.section-work
+//.section-title
+//.section-title-sub
+//.main-cont
+.work-cont
+	+below(768px)
+		fw()
+		margin-top 0
+	f()
+	margin-top 50px
+.work-img
+	+below(768px)
+		width 100%
+		img
+			margin 0 auto
+	width 50%
+.work-list
+	+below(768px)
+		width 100%
+	width 50%
+.work-list-el
+	border 1px solid black 
+	f()
+	margin-bottom 20px
+.work-list-numb
+	font-size 42px
+	padding 20px
+	border-right 1px solid black 
+.uber-img
+	+below(768px)
+		width 200px
+.work-list-text
+	padding 10px 20px
+	flex(mid)
+.section-uber
+	bgi('bg-3.jpg') 
+.uber
+	flex(mid)
+	fl()
+.uber-title
+	@extend .header-content-text
+	color white
+.uber-title-sub
+	+below(768px)
+		width 100%
+		font-size 12px
+	@extend .header-content-text-sub
+	color white
+	text-align center
+	width 70%
+	margin-bottom 40px
+.uber-title-get
+	+below(768px)
+		width 100%
+		padding 20px  0
+		text-align center
+	@extend .btn
+	color black
+	&:hover
+		background yellow
+		color white 
+.uber-get
+	+below(768px)
+		width 100%
+		padding 20px 0
+		text-align center
+		margin-bottom 0
+	@extend .btn
+	color black
+	&:hover
+		background yellow
+		color white 
+.valid-img
+	max-width 800px
+	margin 40px auto
+	 
+.valid-cont
+	+below(768px)
+		margin-top 20px
+	flex(between)
+	fw()
+	margin-top 80px
+.valid-el
+	+below(768px)
+		width 100%
+	width 30%
+	margin-bottom 30px
+.valid-title
+	margin-bottom 10px
+	span
+		up()
+		font-weight bold 
+.valid-numb
+	font-size 48px
+	display inline-block
+	margin-right 10px
+.section-pay
+	+below(768px)
+		background #2b2a27 
+		flex(mid)
+		fl()
+		height auto
+		padding 40px 0
+	bgi('bg-2.jpg') 
+	height 800px
+	padding 0
+	flex(mid)
+	bg-full()
+.pay
+	+below(768px)
+		width 100%
+		flex(mid)
+		fl()
+	width 50%
+.pay-title
+	+below(768px)
+		text-align center
+		font-size 24px
+	up()
+	color white
+	font-size 32px
+.pay-text
+	+below(768px)
+		font-size 14px
+		text-align center
+	color darken(white,30)
+	margin 30px 0
+.cont-wrap
+	+below(768px)
+		padding 30px 0
+		margin-top 30px
+	background #E9E9E9 
+	margin-top 80px
+	padding 80px 0
+.cont
+	+below(768px)
+		fw()
+	flex(between)
+.form
+	+below(768px)
+		width 100%
+		margin-bottom 30px
+		padding 10px
+	width 40%
+	background white
+	border 1px solid black
+	padding 40px 
+	input
+		width 100%
+		margin-bottom 10px
+	textarea
+		width 100%
+label.error
+	margin-bottom 10px
+	display inline-block
+.form-title
+	+below(768px)
+		font-size 18px
+	up()
+	text-align center
+	font-size 24px 
+.form-title-sub
+	+below(768px)
+		margin-bottom 10px
+	text-align center
+	font-size 14px
+	color darken(white,30)
+	margin-bottom 30px
+.cont-info
+	+below(768px)
+		width 100%
+	width 50%
+.cont-info-title
+	+below(768px)
+		font-size 24px
+		text-align center
+	up()
+	font-size 48px
+	margin-bottom 40px
+.cont-info-el
+	flex(mid)
+	justify-content flex-start
+	margin-bottom 20px
+.cont-info-icon
+	.icon
+		size 40px
+		margin-right 20px
+.cont-info-text
+	font-size 20px
+.cont-text
+	color darken(white,60)
+.form-get 
+	@extend .btn
+	width 100%
+	text-align center
+	color white
+	background black
+	margin-top 20px 
+	&:hover
+		background white
+		color black 
+		
+.section-cont
+	padding-bottom 0
+.activ-nav
+	border-bottom 1px solid black
+
+.modal
+	display none
+	background white
+	padding 30px 20px
+	br(4px) 
+	position relative
+	.icon-times
+		position absolute
+		top 10px
+		right 10px
+		font-size 22px
+		cp()
+
+.modal-true
+	background black
+	padding 4%
+.modal-wrap
+	flex(mid)
+	fl()
+	fw()
+	.icon
+		fill white
+		size 80px 
+		margin-bottom 20px
+.modal-true-text
+	text-align center
+	color white
+	font-size 20px
+	up()
