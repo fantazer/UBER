@@ -650,41 +650,41 @@ select input:-ms-input-placeholder {
     color: #111;
   }
 }
-.section-adv-img {
+.section-advants-img {
   position: absolute;
   top: -150px;
   left: 0;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
-  .section-adv-img {
+  .section-advants-img {
     top: -50px;
   }
 }
-.section-adv-img img {
+.section-advants-img img {
   width: 600px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 768px) {
-  .section-adv-img img {
+  .section-advants-img img {
     width: 200px;
   }
 }
-.section-adv {
+.section-advants {
   background: #303030;
   position: relative;
   margin-top: 150px;
 }
 @media only screen and (max-width: 768px) {
-  .section-adv {
+  .section-advants {
     margin-top: 30px;
   }
 }
-.section-adv .section-title {
+.section-advants .section-title {
   margin-top: 150px;
 }
 @media only screen and (max-width: 768px) {
-  .section-adv .section-title {
+  .section-advants .section-title {
     margin-top: 90px;
   }
 }
@@ -719,7 +719,7 @@ select input:-ms-input-placeholder {
 .section-title-sub--white {
   color: #b3b3b3;
 }
-.adv-cont {
+.advants-cont {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -738,11 +738,11 @@ select input:-ms-input-placeholder {
   margin-top: 90px;
 }
 @media only screen and (max-width: 768px) {
-  .adv-cont {
+  .advants-cont {
     margin-top: 20px;
   }
 }
-.adv-el {
+.advants-el {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -765,32 +765,32 @@ select input:-ms-input-placeholder {
   margin-bottom: 90px;
 }
 @media only screen and (max-width: 768px) {
-  .adv-el {
+  .advants-el {
     width: 45%;
     margin-bottom: 20px;
   }
 }
-.adv-icon {
+.advants-icon {
   margin-bottom: 20px;
 }
-.adv-icon .icon {
+.advants-icon .icon {
   fill: #fff;
   width: 90px;
   height: 90px;
 }
 @media only screen and (max-width: 768px) {
-  .adv-icon .icon {
+  .advants-icon .icon {
     width: 50px;
     height: 50px;
   }
 }
-.adv-text {
+.advants-text {
   text-align: center;
   color: #b3b3b3;
   font-size: 20px;
 }
 @media only screen and (max-width: 768px) {
-  .adv-text {
+  .advants-text {
     font-size: 14px;
   }
 }
@@ -829,17 +829,34 @@ select input:-ms-input-placeholder {
   }
 }
 .work-list-el {
-  border: 1px solid #111;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid #111;
   margin-bottom: 20px;
 }
 .work-list-numb {
   font-size: 42px;
   padding: 20px;
   border-right: 1px solid #111;
+}
+@media only screen and (max-width: 768px) {
+  .work-list-numb {
+    width: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media only screen and (max-width: 768px) {
   .uber-img {
@@ -860,6 +877,12 @@ select input:-ms-input-placeholder {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .work-list-text {
+    width: -webkit-calc(100% - 100px);
+    width: calc(100% - 100px);
+  }
 }
 .section-uber {
   background: url("../img/bg-3.jpg") no-repeat;
@@ -1182,6 +1205,11 @@ label.error {
 .cont-info-text {
   font-size: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .cont-info-text {
+    font-size: 18px;
+  }
+}
 .cont-text {
   color: #666;
 }
@@ -1254,6 +1282,110 @@ label.error {
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
+}
+.valid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: initial;
+  -webkit-align-items: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  margin-bottom: 80px;
+}
+@media only screen and (max-width: 1024px) {
+  .valid {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+}
+.valid-col {
+  width: 48%;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .valid-col {
+    width: 100%;
+  }
+}
+.valid-col-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .valid-col-title {
+    font-size: 18px;
+  }
+}
+.valid-list {
+  color: #302f2f;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #e8eae9;
+}
+.valid-img-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.valid-img-el {
+  width: 24%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .valid-img-el {
+    width: 48%;
+    height: 150px;
+  }
+}
+.car-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.car-row .uber-title-get {
+  background: #111;
+  color: #fff;
 }
 .col {
   -webkit-box-sizing: border-box;

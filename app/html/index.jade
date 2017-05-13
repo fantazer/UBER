@@ -9,7 +9,7 @@ include ../module/**/*.jade
 					img(src="img/logo.png", alt="")
 				.menu
 					.menu-wrap
-						a(href="#adv" rel='m_PageScroll2id').menu__el Преимущества
+						a(href="#advant" rel='m_PageScroll2id').menu__el Преимущества
 						a(href="#work" rel='m_PageScroll2id').menu__el Заработок
 						a(href="#valid" rel='m_PageScroll2id').menu__el Требования
 						a(href="#cont" rel='m_PageScroll2id').menu__el Контакты
@@ -20,41 +20,41 @@ include ../module/**/*.jade
 		img(src="img/uber-logo.png", alt="")
 		.header-content-text uber-prof
 		.header-content-text-sub Официальный партнер UBER
-		a(href="#adv" rel='m_PageScroll2id')
+		a(href="#advant" rel='m_PageScroll2id')
 			+icon("arrow-down","icon")
 
 //section-adv
-.section.section-adv
-	#adv.section-adv-img
+#advant.section.section-advants
+	.section-advants-img
 		img(src="img/car-white.png", alt="")
 	.section-title.section-title--white Узнайте наши преимущества
 	.section-title-sub.section-title-sub--white C нами очень выгодно работать, мы всегда следим за рынком
 	.main-cont
-		.adv-cont
-			.adv-el
-				.adv-icon
+		.advants-cont
+			.advants-el
+				.advants-icon
 					+icon("coins","icon")
-				.adv-text Выплаты раз в неделю 4%
-			.adv-el
-				.adv-icon
+				.advants-text Выплаты раз в неделю 4%
+			.advants-el
+				.advants-icon
 					+icon("icon-change","icon")
-				.adv-text Ежедневные выплаты 5%
-			.adv-el
-				.adv-icon
+				.advants-text Ежедневные выплаты 5%
+			.advants-el
+				.advants-icon
 					+icon("icon-user","icon")
-				.adv-text Договор с каждым водителем
-			.adv-el
-				.adv-icon
+				.advants-text Договор с каждым водителем
+			.advants-el
+				.advants-icon
 					+icon("icon-case","icon")
-				.adv-text Переход от других партнеров
-			.adv-el
-				.adv-icon
+				.advants-text Переход от других партнеров
+			.advants-el
+				.advants-icon
 					+icon("icon-handshake","icon")
-				.adv-text Все встречи в нашем офисе
-			.adv-el
-				.adv-icon
+				.advants-text Все встречи в нашем офисе
+			.advants-el
+				.advants-icon
 					+icon("icon-doc","icon")
-				.adv-text Гарантия всех выплат
+				.advants-text Полная гарантия всех выплат
 //section-adv-end
 
 //section work
@@ -93,47 +93,93 @@ include ../module/**/*.jade
 
 //section valid
 #valid.section.section-valid
-	.section-title Требования к водителю
+	.section-title Необходимые требования 
 	.section-title-sub Мы ценим каждого водителя, но у нас существует строгий отбор
 	.main-cont
 		.valid-img
 			img(src="img/car-front.jpg", alt="")
-		.valid-cont
-			.valid-el
-				.valid-title
-					.valid-numb 01.
-					span Паспорт
-				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+		//- .valid-cont
+		//- 	.valid-el
+		//- 		.valid-title
+		//- 			.valid-numb 01.
+		//- 			span Паспорт
+		//- 		.valid-text  Мы солидная компания, дорожащая собственной репутацией, поэтому наличие паспорта подтверждающего вашу личность и места регистрации обязательное условие работы с нами.
 
-			.valid-el
-				.valid-title
-					.valid-numb 02.
-					span Автомобиль
-				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
-
-			.valid-el
-				.valid-title
-					.valid-numb 03.
-					span Стаж вождения
-				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
-
-			.valid-el
-				.valid-title
-					.valid-numb 04.
-					span Отсутствие судимостей
-				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+		//- 	.valid-el
+		//- 		.valid-title
+		//- 			.valid-numb 02.
+		//- 			span Автомобиль
+		//- 		.valid-text  Мы дорожим мнением наших клиентов, поэтому машина должна иметь опрятный вид, быть всегда вымытой. Все оборудование должно исправно работать. Резина устанавливается строго по сезону.
+		//- 	.valid-el
+		//- 		.valid-title
+		//- 			.valid-numb 03.
+		//- 			span Стаж вождения
+		//- 		.valid-text  Чтобы гарантировать клиентам безопасный и надежный сервис водитель должен уверенно водить автомобиль и соблюдать правила движения. Стаж работы, обеспечивающий высокий профессионализм.
+		//- 	.valid-el
+		//- 		.valid-title
+		//- 			.valid-numb 04.
+		//- 			span Отсутствие судимостей
+		//- 		.valid-text  Наша служба безопасности внимательно проверяет лояльность сотрудников к существующему законодательству. Для уверенности в добропорядочности требуется полное соблюдение законов.
 			
-			.valid-el
-				.valid-title
-					.valid-numb 05.
-					span Смартфон или планшет
-				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+		//- 	.valid-el
+		//- 		.valid-title
+		//- 			.valid-numb 05.
+		//- 			span Смартфон или планшет
+		//- 		.valid-text Чтобы иметь возможность всегда быстро связаться с водителем у него должен иметься смартфон или планшет с зарегистрированным номером. Это позволит более оперативно реагировать на заявки.
 
-			.valid-el
-				.valid-title
-					.valid-numb 06.
-					span Карта любого банка РФ. 
-				.valid-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur totam alias inventore ducimus nostrum recusandae ab dicta tempore magnam cum!
+		//- 	.valid-el
+		//- 		.valid-title
+		//- 			.valid-numb 06.
+		//- 			span Карта любого банка РФ. 
+		//- 		.valid-text  Чтобы иметь возможность не платить зарплату в конвертах предприятие предпочитает пользоваться услугами банка. Наличие карты одного из банков РФ обеспечит прозрачность расчета и качественный учет.
+		.valid
+			.valid-col
+				.valid-col-title Требования к водителю
+				.valid-list Гражданство. Прием граждан России, Белоруссии, Армении, Казахстана и Кыргызстана. Для граждан других государств требования
+				.valid-list Автомобиль — иномарка. Полный перечень допустимых автомобилей для работы вы можете найти ниже
+				.valid-list Стаж вождения более 3-х лет.
+				.valid-list Отсутствие судимостей и проблем с законом. 
+				.valid-list Смартфон или планшет, который работает на iOS или Android
+				.valid-list Карта любого банка РФ. 
+				.valid-list Лицензия такси. Если нету, тогда мы ее вам официально организуем.Оформляется только на авто белого или желтого цвета
+					ul
+						li Cтоимость лицензии 5000 руб, предоплата 1000 рублей, доплата 4000 по факту получения, после проверки на сайте Минтранса
+						li Не нужно открывать юридическое лицо ИП или ООО
+						li Срок получения лицензии 3 недели
+						li Для оформления нужны всего 2 документа: паспорт собственника авто и свидетельство о регистрации траспортного средства
+				.valid-list Если вы не гражданин одной из стран: России, Белоруссии, Армении, Казахстана и Киргизии. То вам нужно предоставить хотя бы один дополнительный документ из перечня, подтверждающий право трудиться  в РФ:
+					ul
+						li Разрешение на временное проживание
+						li Патент для работы на территории Москвы
+						li Разрешение на работу на территории Москвы
+						li Виза высококвалифицированного специалиста    
+				
+
+			.valid-col
+				.valid-col-title Необходимые документы
+				.valid-list Паспорт. Разворот с фотографией. Прописка не нужна.
+				.valid-list Водительское удостоверение. С двух сторон.
+				.valid-list Страховой полис ОСАГО. С лицевой стороны.
+				.valid-list Свидетельство о регистрации транспортного средства. С лицевой стороны.
+				.valid-list Фотография автомобиля. С угла спереди, что бы было видно номер.
+				.valid-list Фотография автомобиля. С угла спереди, что бы было видно номер.
+				.valid-list Фотография заднего сидения.
+				.valid-list Лицензия на осуществление таксомоторной деятельности, если есть. Если ее нет, то позвоните нам и мы расскажем что делать в этом случае.
+				.valid-img-wrap
+					.valid-img-el(style="background-image:url(img/doc-1.jpg)")
+					.valid-img-el(style="background-image:url(img/doc-2.jpg)")
+					.valid-img-el(style="background-image:url(img/doc-2-1.jpg)")
+					.valid-img-el(style="background-image:url(img/doc-3.jpg)")
+					.valid-img-el(style="background-image:url(img/doc-4.jpg)")
+					.valid-img-el(style="background-image:url(img/doc-5.jpg)")
+					.valid-img-el(style="background-image:url(img/doc-6.jpg)")
+					.valid-img-el(style="background-image:url(img/doc-7.jpg)")
+
+		.section-title Полный перечень допустимых автомобилей
+		.section-title-sub Не каждый автомобиль подходит для водителей Uber
+		.car-row
+			a(href="http://uber-help.ru/vehicles/#MOSCOW").uber-title-get смотреть
+
 //section valid-end
 
 //section pay
@@ -141,7 +187,7 @@ include ../module/**/*.jade
 	.main-cont.section-pay-wrap
 		.pay
 			.pay-title Зарабатывайте сегодня
-			.pay-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aut odit soluta voluptatibus aliquid ipsum consequuntur eum, recusandae sint veniam. Quae aut odit soluta voluptatibus aliquid ipsum consequuntur eum, recusandae sint veniam.
+			.pay-text  Наше Компания имеет отличную репутацию добропорядочного партнера способного легко решать сложные задачи.  Мы быстро реагируем на любую заявку и гарантируем немедленную оплату. 
 			a(href="#cont" rel='m_PageScroll2id').uber-get отправить заявку
 //section pay-end
 
@@ -174,7 +220,7 @@ include ../module/**/*.jade
 						.cont-info-icon
 							+icon("icon-placeholder","icon")
 						.cont-info-text Варшавское шоссе 125, секция 12
-					.cont-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ipsum libero aperiam facilis in est aliquam mollitia perferendis pariatur corporis dolorum hic quisquam eveniet quasi molestias labore soluta dolorem, vero aut porro accusantium incidunt asperiores. Molestias nisi, fuga voluptas!
+					.cont-text  Если вы затрудняетесь определиться в своем решении, операторы помогут  вам с вашими вопросами . Простой звонок и новая работа будет у вас через несколько минут. Не тяните, и вы быстро окажитесь в ряду водителей с особым статусом.
 
 .modal.modal-true
 	.modal-wrap

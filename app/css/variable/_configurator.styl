@@ -85,7 +85,7 @@
 	color grey
 	font-size 18px
 	font-weight 200 
-.section-adv-img
+.section-advants-img
 	+below(768px)
 		top -50px
 	position absolute
@@ -97,7 +97,7 @@
 			width 200px
 		width 600px
 		margin 0 auto
-.section-adv
+.section-advants
 	+below(768px)
 		margin-top 30px
 	background #303030 
@@ -129,13 +129,13 @@
 .section-title-sub--white
 	color darken(white,30)
 
-.adv-cont
+.advants-cont
 	+below(768px)
 		margin-top 20px
 	flex(between)
 	fw()
 	margin-top 90px
-.adv-el
+.advants-el
 	+below(768px)
 		width 45%
 		margin-bottom 20px
@@ -144,7 +144,7 @@
 	fw()
 	width 30%
 	margin-bottom 90px
-.adv-icon
+.advants-icon
 	margin-bottom 20px
 	.icon
 		+below(768px)
@@ -152,7 +152,7 @@
 		fill white
 		size 90px
 
-.adv-text
+.advants-text
 	+below(768px)
 		font-size 14px
 	text-align center
@@ -179,10 +179,13 @@
 		width 100%
 	width 50%
 .work-list-el
-	border 1px solid black 
 	f()
+	border 1px solid black 
 	margin-bottom 20px
 .work-list-numb
+	+below(768px)	
+		width 100px
+		flex(mid)
 	font-size 42px
 	padding 20px
 	border-right 1px solid black 
@@ -190,6 +193,8 @@
 	+below(768px)
 		width 200px
 .work-list-text
+	+below(768px)	
+		width calc(100% - 100px) 
 	padding 10px 20px
 	flex(mid)
 .section-uber
@@ -346,6 +351,8 @@ label.error
 		size 40px
 		margin-right 20px
 .cont-info-text
+	+below(768px)
+		font-size 18px
 	font-size 20px
 .cont-text
 	color darken(white,60)
@@ -394,3 +401,50 @@ label.error
 	color white
 	font-size 20px
 	up()
+
+.valid
+	+below(1024px)
+		fw()
+		margin-bottom 0px
+	flex(between)
+	align-items initial
+	margin-bottom 80px
+.valid-col
+	+below(1024px)
+		width 100%
+	width 48%
+	margin-bottom 20px
+	//padding 20px
+	//background #f8f8f8
+	//box-shadow 0px 0px 10px #e5e0e0
+.valid-col-title
+	+below(1024px)
+		font-size 18px
+	font-size 28px
+	margin-bottom 20px
+	up()
+	text-align center
+.valid-list
+	color #302f2f
+	//border 1px solid #d1cccc
+	margin-bottom 10px
+	padding 10px
+	background #e8eae9 
+.valid-img-wrap
+	flex(between)
+	fw()
+.valid-img-el
+	+below(768px)	
+		width 48%
+		height 150px
+	width 24%
+	height 200px
+	bg-full()
+	margin-bottom 10px
+	br(5px)
+
+.car-row
+	flex(mid)
+	.uber-title-get 
+		background black
+		color white 
